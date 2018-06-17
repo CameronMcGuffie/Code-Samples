@@ -3,10 +3,14 @@
         Introduction page
         This is only static HTML
     */
-?>
+?> 
             <h3>Introduction</h3>
-            <span>This is basically an introduction to me. Select a topic below to open/close its contents.</span>
+            <span>This is basically an introduction to me.</span>
             <div class="dvLargeSpacer"></div>
+            <div class="dvHelp">
+                Please click a heading below to open its contents.
+            </div>
+            <div class="dvSmallSpacer"></div>
             <div>
                 <a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpWho" role="button" href="#clpWho" id="btnclpWho">Who are you? <i class="fa fa-angle-down"></i></a>
                 <div class="collapse hide clpContent" id="clpWho">

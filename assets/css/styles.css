@@ -18,6 +18,14 @@
   border-radius:0px 0px 0px 0px;
 }
 
+.dvHelp {
+  width:50%;
+  margin-left:25%;
+  padding:6px;
+  border-radius:0px 0px 0px 0px;
+  text-align:center;
+}
+
 .dvSmallSpacer {
   padding:4px;
 }

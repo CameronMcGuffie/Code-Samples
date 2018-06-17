@@ -5,17 +5,27 @@
     */
 ?>
             <h3>Server Setup</h3>
-            <span>This page documents how I would setup a server to demonstrate ability. Please click a heading below to read more.</span>
+            <span>This page documents how I would setup a server to demonstrate ability.</span>
             <div class="dvLargeSpacer"></div>
+            <div class="dvHelp">
+                Please click a heading below to open its contents.
+            </div>
+            <div class="dvSmallSpacer"></div>
             <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpApache" role="button" href="#clpApache" id="btnClpApache">Installing Apache, PHP, MySQL, PHPMyAdmin <i class="fa fa-angle-down"></i></a>
                 <div class="collapse hide clpContent" id="clpApache">
                     <p>To setup Apache, PHP and MySQL on CentOS I would perform the following commands.</p>
-                    <ol>
-                        <li>sudo yum install apache2 - Install the actual Apache server.</li>
-                        <li>sudo yum install php php-mysql - Install PHP and MySQL.</li>
-                        <li>sudo yum install phpmyadmin - Install PHPMyAdmin to admin the DB server.</li>
-                        <li>sudo service httpd restart - Restart the service.</li>
-                    </ol>
+                    <p>Install the actual Apache server.<br />
+                    <code>sudo yum install apache2</code></p>
+
+                    <p>Install PHP and MySQL.<br />
+                    <code>sudo yum install php php-mysql</code></p>
+
+                    <p>Install PHPMyAdmin to admin the DB server.<br />
+                    <code>sudo yum install phpmyadmin</code></p>
+
+                    <p>Restart the Apache service.<br />
+                    <code>sudo service httpd restart</code></p>
+                    
                     <p>Yay now we *should* have a server with Apache, PHP, MySQL running.. If only it were that easy.</p>
                     <p>I've dumbed this down to just a few commands attempting to show I understand the bash commands, trusty Google always helps here too.</p>
                 </div>
