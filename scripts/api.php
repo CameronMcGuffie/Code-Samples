@@ -47,7 +47,7 @@
     } 
     else if($script == "salthash") 
     {
-        echo password_hash($p1, PASSWORD_DEFAULT);
+        echo password_hash($parameter1, PASSWORD_DEFAULT);
     }
     else if($script == "gethtml") 
     {

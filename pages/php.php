@@ -76,7 +76,7 @@
                     </div>
                 </div> 
             </div>
-            <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpPHPDynamicTable" role="button" href="#clpPHPDynamicTable" id="btnclpPHPDynamicTable">MySQL, JSON <i class="fa fa-angle-down"></i></a>
+            <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpPHPDynamicTable" role="button" href="#clpPHPDynamicTable" id="btnclpPHPDynamicTable" onclick="fnGetPHPDynTable();">MySQL, JSON <i class="fa fa-angle-down"></i></a>
                 <div class="collapse hide clpContent" id="clpPHPDynamicTable">
                     <p>This is an example of writing to MySQL, retriving from MySQL, parsing JSON and displaying it on the page. <code>Line 109, 149-193 of scripts.js, lines 59-95 of api.php</code>.</p>
                     <div class="table-responsive">

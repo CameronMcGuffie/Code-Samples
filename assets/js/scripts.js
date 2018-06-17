@@ -3,7 +3,7 @@ var dynTable = []; // Array to hold the dynamic table objects
 $(document).ready(function(){
     
     dynTable.push("Billy;McDonald;billy@mcdonald.com");
-    fnShowDynTable();fnGetPHPDynTable();
+    fnShowDynTable();
     /*
         JQuery Page
     */
