@@ -11,7 +11,7 @@
                 <i class="fa fa-info-circle"></i> Please click a heading below to open its contents.
             </div>
             <div class="dvSmallSpacer"></div>
-            <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpApache" role="button" href="#clpApache" id="btnClpApache">Installing Apache, PHP, MySQL, PHPMyAdmin <i class="fa fa-angle-down"></i></a>
+            <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpApache" role="button" href="#clpApache" id="btnClpApache">Installing Software <i class="fa fa-angle-down"></i></a>
                 <div class="collapse hide clpContent" id="clpApache">
                     <p>To setup Apache, PHP and MySQL on CentOS I would perform the following commands.</p>
                     <p>Install the actual Apache server.<br />

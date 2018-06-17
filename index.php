@@ -38,6 +38,9 @@
     </div>
     <div class="row rwBody rwContent">
         <div class="col clPageContent">
+            <div class="row rwAlert">
+                <div class="col colAlertMobile"><i class="fa fa-info-circle"></i> This page is best viewed on a desktop.</div>
+            </div>
             <?php
                 if(!$page || $page == "introduction") // If a page isn't selected or introduction is
                 {

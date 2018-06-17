@@ -4,10 +4,25 @@
   background-color:#FFF;
 }
 
+@media only screen and (max-width: 1280px) {
+  .row.rwBody {
+    width:100%;
+    background-color:#FFF;
+  }
+}
+
 .btnCollapse {
   width:50%;
   margin-left:25%;
   border-radius:0px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .btnCollapse {
+    width:95%;
+    margin-left:2.5%;
+    border-radius:0px 0px 0px 0px;
+  }
 }
 
 .clpContent {
@@ -18,12 +33,33 @@
   border-radius:0px 0px 0px 0px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .clpContent {
+    border:1px solid #CCC;
+    width:95%;
+    margin-left:2.5%;
+    padding:6px;
+    border-radius:0px 0px 0px 0px;
+  }
+
+}
+
 .dvHelp {
   width:50%;
   margin-left:25%;
   padding:6px;
   border-radius:0px 0px 0px 0px;
   text-align:center;
+}
+
+@media only screen and (max-width: 1280px) {
+  .dvHelp {
+    width:95%;
+    margin-left:2.5%;
+    padding:6px;
+    border-radius:0px 0px 0px 0px;
+    text-align:center;
+  }
 }
 
 .dvSmallSpacer {
@@ -97,4 +133,22 @@
   padding-left: 10px;
   border-radius: 3px;
   display:none;
+}
+
+.colAlertMobile {
+  display:none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .colAlertMobile {
+    background-color: rgba(134, 220, 241, 0.6);
+    color: #333333;
+    font-size: 14px;
+    width: 250px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 3px;
+    margin:10px;
+    display:block;
+  }
 }
