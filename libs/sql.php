@@ -5,5 +5,5 @@
     */
 
     // Create a connection the the SQL database
-    $GLOBALS['SQL_Conn'] = new mysqli($GLOBALS['SQL_Address'], $GLOBALS['SQL_User'], $GLOBALS['SQL_Pass'], $GLOBALS['SQL_DB']);
+    $GLOBALS['SQL_Conn'] = new mysqli($GLOBALS['SQL_Address'], $GLOBALS['SQL_User'], $GLOBALS['SQL_Pass'], $GLOBALS['SQL_DB']) or die("ERROR");
 ?>

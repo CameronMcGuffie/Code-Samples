@@ -3,7 +3,7 @@ var dynTable = []; // Array to hold the dynamic table objects
 $(document).ready(function(){
     
     dynTable.push("Billy;McDonald;billy@mcdonald.com");
-    fnShowDynTable();
+    fnShowDynTable();fnGetPHPDynTable();
     /*
         JQuery Page
     */
@@ -94,6 +94,29 @@ $(document).ready(function(){
             }
         });
     });
+
+    $("#btnHTMLParse").click(function(){
+        $("#btnHTMLParse").hide();
+        $.get("/api/gethtml", function(data, status) { 
+            if(data)
+            {
+                $("#lblHTMLParse").text(data);
+                $("#btnHTMLParse").show();
+            }
+        });
+    });
+
+    $("#btnPHPTableAdd").click(function(){
+        var param = $("#txtPHPFirstname").val() + ";" + $("#txtPHPLastname").val() + ";" + $("#txtPHPEmail").val();
+        
+        var posting = $.post("/api/adduser", { p1: param } );
+        posting.done(function( data ) {  
+            if(data)
+            {
+                fnGetPHPDynTable();
+            }
+        });
+    });
 });
 
 function fnShowDynTable()
@@ -121,4 +144,51 @@ function fnShowDynTable()
 function fnRemoveDynTable(index) {
     dynTable.splice(index, 1);
     fnShowDynTable();
+}
+
+function fnGetPHPDynTable()
+{
+    dynTable = [];
+    $.get("/api/listusers", function(data, status) { 
+        if(data)
+        {
+            jQuery.each(data.users, function(i, val) {
+                dynTable.push(val.id + ";" + val.firstname + ";" + val.lastname + ";" + val.email);
+            });
+
+            fnShowPHPDynTable();
+        }
+    });
+}
+
+function fnShowPHPDynTable()
+{
+    $('#tblDynTable').html('');
+    if(dynTable.length)
+    {
+        for(i = 0; i <= (dynTable.length - 1); i++)
+        {
+            icon = "fa-remove";
+                
+            if(dynTable[i] != "default")
+            {
+                if(dynTable.length)
+                {
+                    $('#tblDynTable').append('<tr><td>' + dynTable[i].split(";")[1] + '</td><td>' + dynTable[i].split(";")[2] + '</td><td>' + dynTable[i].split(";")[3] + '</td><td style="text-align:center;"><a onclick="fnRemovePHPDynTable(\'' + dynTable[i].split(";")[0] + '\');"><i class="fa fa-remove" style="cursor:pointer;"></a></td></tr>');
+                } else {
+                    $('#tblDynTable').html(""); 
+                }
+            }
+        }
+    }
+}
+
+function fnRemovePHPDynTable(index) {
+    var posting = $.post("/api/deleteuser", { p1: index } );
+    posting.done(function( data ) {  
+        if(data)
+        {
+            fnGetPHPDynTable();
+        }
+    });
 }
