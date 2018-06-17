@@ -1,0 +1,50 @@
+.row.rwBody {
+  margin:0 auto;
+  width:1280px;
+  background-color:#FFF;
+}
+
+.btnCollapse {
+  width:50%;
+  margin-left:25%;
+  border-radius:0px 0px 0px 0px;
+}
+
+.clpContent {
+  border:1px solid #CCC;
+  width:50%;
+  margin-left:25%;
+  padding:6px;
+  border-radius:0px 0px 0px 0px;
+}
+
+.dvSmallSpacer {
+  padding:4px;
+}
+
+.dvLargeSpacer {
+  padding:12px;
+}
+
+.col.clPageContent {
+  padding:0px;
+  padding-top:13px;
+  padding-right:35px;
+  padding-bottom:20px;
+  padding-left:35px;
+}
+
+.bdBody {
+  background-image:url("../../assets/img/code-background.png");
+  margin:10px;
+}
+
+.row.rwBody.rwNav {
+  border-radius:5px 5px 0px 0px;
+  padding-top:10px;
+}
+
+.row.rwBody.rwContent {
+  border-radius:0px 0px 5px 5px;
+}
+
