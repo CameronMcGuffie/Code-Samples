@@ -54,10 +54,10 @@
                         <div class="col colInput"><input type="text" id="txtValidateEmail" /></div>
                     </div>
                     <div class="row rwForm">
-                        <div class="col colError" id="dvEmailERR">Please enter a valid e-mail.</div>
+                        <div class="col colError" id="dvEmailERR"><i class="fa fa-remove"></i> Please enter a valid e-mail.</div>
                     </div>
                     <div class="row rwForm">
-                        <div class="col colSuccess" id="dvEmailOK">That e-mail seems valid.</div>
+                        <div class="col colSuccess" id="dvEmailOK"><i class="fa fa-check"></i> That e-mail seems valid.</div>
                     </div>
                 </div> 
             </div>
