@@ -22,5 +22,11 @@
         setcookie("CamSampler", $parameter1, time()+300, "/", "samples.cameronmcguffie.com", 1); // Restrict to my subdomain
 
         echo "OK";
+    } else if($script == "viewcookie") {
+        if(isset($_COOKIE["CamSampler"])) {
+            echo $_COOKIE["CamSampler"];
+        } else {
+            echo "No Cookie Set";
+        }
     }
 ?>

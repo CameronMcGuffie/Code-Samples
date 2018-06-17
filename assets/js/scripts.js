@@ -49,16 +49,25 @@ $(document).ready(function(){
     });
 
     $("#btnAddCookie").click(function(){
-    var posting = $.post("/api/addcookie", { p1: $("#txtAddCookieValue").val() } );
-            posting.done(function( data ) { 
-                if(data == "OK") {
-                    $("#dvAddCookieOK").show();
-                    $("#dvAddCookieERR").hide();
-                } else {
-                    $("#dvAddCookieERR").show();
-                    $("#dvAddCookieOK").hide();
-                }
-            });
+        var posting = $.post("/api/addcookie", { p1: $("#txtAddCookieValue").val() } );
+        posting.done(function( data ) { 
+            if(data == "OK") {
+                $("#dvAddCookieOK").show();
+                $("#dvAddCookieERR").hide();
+            } else {
+                $("#dvAddCookieERR").show();
+                $("#dvAddCookieOK").hide();
+            }
+        });
+    });
+
+    $("#btnViewCookie").click(function(){
+            $.get("/api/viewcookie", function(data, status) { 
+            if(data)
+            {
+                $("#lblViewCookieContent").text(data);
+            }
+        });
     });
 });
 
