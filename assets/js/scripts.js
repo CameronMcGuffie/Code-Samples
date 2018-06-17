@@ -16,6 +16,25 @@ $(document).ready(function(){
         
         fnShowDynTable();
     });
+    
+    $("#txtValidateEmail").keyup(function(){
+        var emailAddress = $("#txtValidateEmail").val();
+        
+        // Taken from http://emailregex.com/
+        var emailAddressRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var emailAddressMatch = emailAddressRegex.exec(emailAddress);
+
+        if(emailAddress == "") {
+            $("#dvEmailOK").hide();
+            $("#dvEmailERR").hide();
+        } else if (emailAddressMatch == null) {
+            $("#dvEmailERR").show();
+            $("#dvEmailOK").hide();
+        } else {
+            $("#dvEmailOK").show();
+            $("#dvEmailERR").hide();
+        }
+    });
 });
 
 function fnShowDynTable()

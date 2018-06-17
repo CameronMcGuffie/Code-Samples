@@ -76,3 +76,25 @@
   text-align:center;
   padding:2px;
 }
+
+.colError {
+  background-color: #D8BCBF;
+  color: #333333;
+  font-size: 14px;
+  width: 300px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 3px;
+  display:none;
+}
+
+.colSuccess {
+  background-color: #BFD9BB;
+  color: #333333;
+  font-size: 14px;
+  width: 250px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 3px;
+  display:none;
+}
