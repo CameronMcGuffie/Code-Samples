@@ -8,7 +8,7 @@
             <span>This page documents how I would setup a server to demonstrate ability.</span>
             <div class="dvLargeSpacer"></div>
             <div class="dvHelp">
-                Please click a heading below to open its contents.
+                <i class="fa fa-info-circle"></i> Please click a heading below to open its contents.
             </div>
             <div class="dvSmallSpacer"></div>
             <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpApache" role="button" href="#clpApache" id="btnClpApache">Installing Apache, PHP, MySQL, PHPMyAdmin <i class="fa fa-angle-down"></i></a>

@@ -8,7 +8,7 @@
             <span>This is basically an introduction to me.</span>
             <div class="dvLargeSpacer"></div>
             <div class="dvHelp">
-                Please click a heading below to open its contents.
+                <i class="fa fa-info-circle"></i> Please click a heading below to open its contents.
             </div>
             <div class="dvSmallSpacer"></div>
             <div>
