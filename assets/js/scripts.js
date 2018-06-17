@@ -84,6 +84,16 @@ $(document).ready(function(){
             }
         });
     });
+
+    $("#btnSaltHashString").click(function(){
+        var posting = $.post("/api/salthash", { p1: $("#txtSaltHashSring").val() } );
+        posting.done(function( data ) {  
+            if(data)
+            {
+                $("#lblSaltHashString").text(data);
+            }
+        });
+    });
 });
 
 function fnShowDynTable()

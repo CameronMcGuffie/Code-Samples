@@ -54,3 +54,16 @@
                     </div>
                 </div> 
             </div>
+            <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpSaltString" role="button" href="#clpSaltString" id="btnclpSaltString">Salt & Hash String <i class="fa fa-angle-down"></i></a>
+                <div class="collapse show clpContent" id="clpSaltString">
+                    <p>This is an example of salting and hashing a string. <code>Line 88 of scripts.js, line 46 of api.php</code>.</p>
+                    <div class="row rwForm">
+                        <div class="col colLabel">String</div>
+                        <div class="col colInput"><input type="text" id="txtSaltHashSring" value="<?php echo time(); ?>" /></div>
+                    </div>
+                    <p><div style="text-align:center;" id="lblSaltHashString">Result will come up here.</div></p>
+                    <div class="row rwForm">
+                        <div class="col colButton" style="padding-right:0px;"><button class="btn btn-primary" type="button" id="btnSaltHashString">Do It</button></div>
+                    </div>
+                </div> 
+            </div>

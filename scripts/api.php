@@ -42,5 +42,9 @@
         } else {
             echo "ERR";
         }
+    } 
+    else if($script == "salthash") 
+    {
+        echo password_hash($p1, PASSWORD_DEFAULT);
     }
 ?>
