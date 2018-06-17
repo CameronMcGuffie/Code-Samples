@@ -32,6 +32,7 @@
                     <li class="nav-item"><a class="nav-link <?php if($page == "server") { echo "active"; } ?>" href="/p/server">Server Setup</a></li>
                     <li class="nav-item"><a class="nav-link <?php if($page == "jquery") { echo "active"; } ?>" href="/p/jquery">JQuery</a></li>
                     <li class="nav-item"><a class="nav-link <?php if($page == "php") { echo "active"; } ?>" href="/p/php">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/CameronMcGuffie/Code-Samples" target="_blank">Source Code</a></li>
                 </ul>
             </header>
         </div>

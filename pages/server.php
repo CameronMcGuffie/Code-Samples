@@ -68,3 +68,6 @@
                     <code>RewriteRule ^api/([a-z0-9]+)/([a-z0-9]+)/([a-z0-9]+)/?$ scripts/api.php?s=$1&p1=$2&p2=$3 [NC,L]</code></p>
                 </div>
             </div>
+            <div class="dvHelp">
+                <i class="fa fa-code"></i> <a href="https://github.com/CameronMcGuffie/Code-Samples/blob/master/pages/server.php" target="_blank">Click Here</a> to see this page's source code.
+            </div>

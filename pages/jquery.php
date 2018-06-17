@@ -80,3 +80,6 @@
                     </div>
                 </div> 
             </div>
+            <div class="dvHelp">
+                <i class="fa fa-code"></i> <a href="https://github.com/CameronMcGuffie/Code-Samples/blob/master/pages/jquery.php" target="_blank">Click Here</a> to see this page's source code.
+            </div>
