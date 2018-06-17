@@ -73,7 +73,7 @@
                 </div> 
             </div>
             <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpPopup" role="button" href="#clpPopup" id="btnclpPopup">Pop-ups <i class="fa fa-angle-down"></i></a>
-                <div class="collapse show clpContent" id="clpPopup">
+                <div class="collapse hide clpContent" id="clpPopup">
                     <p>This is an example of a good-looking pop-up from JQuery.</p>
                     <div class="row rwForm">
                         <div class="col colButton" style="padding-right:0px;"><button class="btn btn-primary" type="button" id="btnShowJQueryPopup">Show Me</button></div>

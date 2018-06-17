@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Samples</title>
+    <title>Code Examples</title>
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -19,7 +19,7 @@
     <div class="row rwBody rwNav">
         <div class="col clHeader">
             <header>
-                <h1>Code Samples</h1>
+                <h1>Code Examples</h1>
                 <div class="dvSmallSpacer"></div>
                 <ul class="nav nav-tabs">
                     <?php
