@@ -69,6 +69,10 @@ input[type="password"] {
   padding:5px;
 }
 
+.dvTinySpacer {
+  padding:2px;
+}
+
 .dvSmallSpacer {
   padding:4px;
 }

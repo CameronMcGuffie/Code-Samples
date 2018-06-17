@@ -47,6 +47,19 @@ $(document).ready(function(){
     $("#btnJQueryPopupClose").click(function(){
         $("#ppJQueryPopup").fadeOut();
     });
+
+    $("#btnAddCookie").click(function(){
+    var posting = $.post("/api/addcookie", { p1: $("#txtAddCookieValue").val() } );
+            posting.done(function( data ) { 
+                if(data == "OK") {
+                    $("#dvAddCookieOK").show();
+                    $("#dvAddCookieERR").hide();
+                } else {
+                    $("#dvAddCookieERR").show();
+                    $("#dvAddCookieOK").hide();
+                }
+            });
+    });
 });
 
 function fnShowDynTable()
