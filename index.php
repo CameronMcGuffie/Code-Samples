@@ -1,6 +1,6 @@
 <?php
     include("libs/common.php"); // Include the common library files.
-    $page = addslashes($_GET["p"]); // Add slashes incase someone tries to inject something tricky
+    $page = addslashes(@$_GET["p"]); // Add slashes incase someone tries to inject something tricky
 ?>
 <!DOCTYPE html>
 <html>
