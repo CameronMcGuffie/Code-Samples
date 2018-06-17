@@ -38,8 +38,9 @@
                     <ol>
                         <li>Add mobile view</li>
                         <li>Fix views in IE and Safari</li>
+                        <li>Add way more code examples - feel free to rewquest some</li>
                     </ol>
-                    <p>Although I intend on doing these soon I decided against them within the scope of this project.
+                    <p>Although I intend on doing more, I did this within a few hours I was not busy on the weekend. Because of this, I focused on what I deemed important.
                 </div>
             </div>
             <div>
