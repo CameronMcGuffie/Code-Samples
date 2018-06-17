@@ -42,7 +42,7 @@
                         <div class="col colInput"><input type="text" id="txtEmail" /></div>
                     </div>
                     <div class="row rwForm">
-                        <div class="col colButton"><input type="button" value="Add" id="btnTableAdd" /></div>
+                        <div class="col colButton" style="padding-left:90px;"><button class="btn btn-primary" type="button" id="btnTableAdd">Add</button></div>
                     </div>
                 </div> 
             </div>
