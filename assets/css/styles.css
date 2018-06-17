@@ -56,3 +56,23 @@
   border-radius:0px 0px 5px 5px;
 }
 
+.rwForm {
+  width:250px;
+  margin:0 auto;
+}
+
+.colLabel {
+  width:20px;
+  padding:2px;
+  text-align:right;
+}
+
+.colInput {
+  width:250px;
+  padding:2px;
+}
+
+.colButton {
+  text-align:center;
+  padding:2px;
+}
