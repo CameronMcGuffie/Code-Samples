@@ -22,11 +22,25 @@
         setcookie("CamSampler", $parameter1, time()+300, "/", "samples.cameronmcguffie.com", 1); // Restrict to my subdomain
 
         echo "OK";
-    } else if($script == "viewcookie") {
+    } 
+    else if($script == "viewcookie") 
+    {
         if(isset($_COOKIE["CamSampler"])) {
             echo $_COOKIE["CamSampler"];
         } else {
             echo "No Cookie Set";
+        }
+    } 
+    else if($script == "deletecookie") 
+    {
+        if(isset($_COOKIE["CamSampler"])) {
+            setcookie("CamSampler", $parameter1);
+            setcookie("CamSampler", $parameter1, time()-3000); // Ages in the past
+            setcookie("CamSampler", $parameter1, time()-3000, "/", "samples.cameronmcguffie.com", 1); // Ages in the past
+    
+            echo "OK";
+        } else {
+            echo "ERR";
         }
     }
 ?>

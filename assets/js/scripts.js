@@ -69,6 +69,21 @@ $(document).ready(function(){
             }
         });
     });
+
+    $("#btnDeleteCookie").click(function(){
+            $.get("/api/deletecookie", function(data, status) { 
+            if(data)
+            {
+                if(data == "OK") {
+                    $("#dvDeleteCookieOK").show();
+                    $("#dvDeleteCookieERR").hide();
+                } else {
+                    $("#dvDeleteCookieERR").show();
+                    $("#dvDeleteCookieOK").hide();
+                }
+            }
+        });
+    });
 });
 
 function fnShowDynTable()
