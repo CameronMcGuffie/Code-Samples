@@ -4,6 +4,17 @@
         Mainly static HTML
     */
 ?>
+            <div id="ppJQueryPopup" class="dvPopupBackground">
+                <div class="ppPopup">
+                    <h3>JQuery pop-up example.</h3>
+                    <p>This is just an example pop-up.</p><br />
+                    <div class="row" id="rwPopupButtons">
+                        <div class="col colPopupButtons">
+                            <div class="btn-group" role="group"><button class="btn btn-primary" type="button" id="btnJQueryPopupOk"><i class="fa fa-check" id="btnVmrEditSave"></i>&nbsp;Ok</button>&nbsp;<button class="btn btn-primary" type="button" id="btnJQueryPopupClose"><i class="fa fa-remove"></i>&nbsp;Close</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h3>JQuery</h3>
             <span>This page shows some JQuery stuff I know how to do, it is here to demonstrate ability.</span>
             <div class="dvLargeSpacer"></div>
@@ -47,7 +58,7 @@
                 </div> 
             </div>
             <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpFormValidation" role="button" href="#clpFormValidation" id="btnclpFormValidation">Form Validation <i class="fa fa-angle-down"></i></a>
-                <div class="collapse show clpContent" id="clpFormValidation">
+                <div class="collapse hide clpContent" id="clpFormValidation">
                     <p>Below I do validation on an e-mail address and show an error if it is invalid. Credit goes to <a href="http://emailregex.com/" target="_blank">E-mail Regex</a> for the Regex.</p>
                     <div class="row rwForm">
                         <div class="col colLabel">E-mail</div>
@@ -58,6 +69,14 @@
                     </div>
                     <div class="row rwForm">
                         <div class="col colSuccess" id="dvEmailOK"><i class="fa fa-check"></i> That e-mail seems valid.</div>
+                    </div>
+                </div> 
+            </div>
+            <div><a class="btn btn-primary btnCollapse" data-toggle="collapse" aria-expanded="true" aria-controls="clpPopup" role="button" href="#clpPopup" id="btnclpPopup">Pop-ups <i class="fa fa-angle-down"></i></a>
+                <div class="collapse show clpContent" id="clpPopup">
+                    <p>This is an example of a good-looking pop-up from JQuery.</p>
+                    <div class="row rwForm">
+                        <div class="col colButton" style="padding-right:0px;"><button class="btn btn-primary" type="button" id="btnShowJQueryPopup">Show Me</button></div>
                     </div>
                 </div> 
             </div>

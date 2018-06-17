@@ -35,6 +35,18 @@ $(document).ready(function(){
             $("#dvEmailERR").hide();
         }
     });
+
+    $("#btnShowJQueryPopup").click(function(){
+        $("#ppJQueryPopup").fadeIn();
+    });
+
+    $("#btnJQueryPopupOk").click(function(){
+        $("#ppJQueryPopup").fadeOut();
+    });
+
+    $("#btnJQueryPopupClose").click(function(){
+        $("#ppJQueryPopup").fadeOut();
+    });
 });
 
 function fnShowDynTable()
